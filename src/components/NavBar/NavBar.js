@@ -32,7 +32,7 @@ export default function Navbar() {
   const navItems = homePath ? notLoggedInNavItems : (isUserLoggedIn ? loggedInNavItems : notLoggedInNavItems);
 
   return (
-    <nav className="border-b bg-white border-secondary-3 top-0 sticky z-[4]">
+    <nav className="border-b bg-white border-secondary-3 top-0 sticky z-[400]">
       <div className="max-w-8xl lg:px-10 px-4 lg:py-6 py-[18px] mx-auto flex justify-between items-center">
         <Link href="/" className="">
           <Image width={200} height={34} src={logo} className="max-w-[200px] xl:max-w-[274px] w-full h-[34px]" alt="Fabric Playground" />
@@ -84,7 +84,7 @@ export default function Navbar() {
                   <Image width={32} height={32} src={profile} alt="Profile" className="w-8 h-8 rounded-full" />
                   <span className="ml-2">Bruce Waine</span>
                 </button>
-                <div className="dropdown-content absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg hidden-nav">
+                <div className="dropdown-content absolute right-0 mt-0 w-48 bg-white border rounded shadow-lg hidden-nav">
                   <Link href="/profile" className="block px-4 py-2 hover:bg-gray-100">Profile details</Link>
                   <Link href="/paymentInformation" className="block px-4 py-2 hover:bg-gray-100">Payment information</Link>
                   <Link href="/billing" className="block px-4 py-2 hover:bg-gray-100">Billing history</Link>
